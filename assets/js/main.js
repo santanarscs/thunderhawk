@@ -157,3 +157,30 @@ $(".mobile-btn").click(function() {
   $(this).toggleClass("active");
   $(".mobile-menu").toggleClass("active");
 });
+
+$("#contact-form").submit(e => {
+  e.preventDefault();
+  $("#contact-form").append("<div id='loading'>Aguarde...</div>");
+  const name = $("#contact-form")
+    .find('input[name="name"]')
+    .val();
+  const mail = $("#contact-form")
+    .find("input[name='mail']")
+    .val();
+  const message = $("#contact-form")
+    .find("textarea[name='message']")
+    .val();
+
+  $.ajax({
+    // url: 'http://localhost:3000/sendmail',
+    // method: 'POST',
+    // context: {name, mail, message}
+    contentType: "application/json",
+    type: "POST",
+    url: "http://localhost:3000/sendmail",
+    data: JSON.stringify({ name, mail, message }),
+    success: msg => {
+      $("#loading").remove();
+    }
+  });
+});

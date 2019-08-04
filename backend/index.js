@@ -1,4 +1,5 @@
 const express = require("express");
+const cors = require("cors");
 const path = require("path");
 const format = require("date-fns/format");
 const pt = require("date-fns/locale/pt");
@@ -8,6 +9,7 @@ const exphbs = require("express-handlebars");
 const nodemailerhbs = require("nodemailer-express-handlebars");
 const app = express();
 app.use(express.json());
+app.use(cors());
 
 function configureTemplates(transporter) {
   const viewPath = path.resolve(__dirname, "views");
@@ -27,6 +29,7 @@ function configureTemplates(transporter) {
 }
 
 app.post("/sendmail", (req, res) => {
+  console.log(req.body);
   const transporter = nodemailer.createTransport({
     host: mailConfig.host,
     port: 2525,
@@ -39,12 +42,12 @@ app.post("/sendmail", (req, res) => {
   configureTemplates(transporter);
 
   const mailOptions = {
-    from: req.body.email,
+    from: req.body.mail,
     to: "emaildoestevao@gmail.com",
     subject: "Contato de orçamento",
     template: "orcamento",
     context: {
-      user: `${req.body.name} <${req.body.email}>`,
+      user: `${req.body.name} <${req.body.mail}>`,
       date: format(new Date(), "'Dia' dd 'de' MMMM', às ' H:mm'h' ", {
         locale: pt
       }),
