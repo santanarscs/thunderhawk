@@ -1,139 +1,179 @@
 <!DOCTYPE html>
 <html>
-<head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Responsive Landing Page Template With Flexbox</title>
 
-	<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
-	<link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
-		<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.6.0/css/font-awesome.min.css">
-		<link rel="stylesheet" href="assets/css/owl.carousel.min.css">
-<link rel="stylesheet" href="assets/css/owl.theme.default.min.css">
-    <link rel="stylesheet" href="assets/css/styles.css">
+    <link
+      href="https://fonts.googleapis.com/css?family=Open+Sans"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Quicksand"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="http://maxcdn.bootstrapcdn.com/font-awesome/4.6.0/css/font-awesome.min.css"
+    />
+    <link rel="stylesheet" href="assets/css/owl.carousel.min.css" />
+    <link rel="stylesheet" href="assets/css/owl.theme.default.min.css" />
+    <link rel="stylesheet" href="assets/css/styles.css" />
+  </head>
 
-</head>
+  <body>
+    <header>
+      <a href="#home" style="display: flex; align-items: flex-end;">
+        <img src="assets/img/logo-group.svg" alt="Logo" />
+      </a>
+      <span class="mobile-btn"></span>
+      <nav class="mobile-menu">
+        <li><a href="#home"> Home</a></li>
+        <li><a href="#about"> Quem Somos</a></li>
+        <li><a href="#mission"> Missão e valores</a></li>
+        <li><a href="#services"> Áreas de Atuação</a></li>
+        <li><a href="#contact"> Contato</a></li>
+      </nav>
+    </header>
 
-<body>
+    <section class="hero" id="home">
+      <div class="background-image" id="particles-js"></div>
+      <!-- <h1>ThunderHawk</h1> -->
+      <h3>A segurança do seu negócio é nossa missão</h3>
+      <a href="#contact" class="btn">Orçamento</a>
+    </section>
 
-	<header>
-		<a href="#home" style="display: flex; align-items: flex-end;">
-				<img src="assets/img/logo-group.svg" alt="Logo">
-		</a>
-		<nav>
-			<li><a href="#home"> Home</a></li>
-			<li><a href="#about"> Quem Somos</a></li>
-			<li><a href="#mission"> Missão e valores</a></li>
-			<li><a href="#about"> Áreas de Atuação</a></li>
-			<li><a href="#services"> Serviços</a></li>
-			<li><a href="#contact"> Contato</a></li>
-		</nav>
-	</header>
+    <section class="our-work" id="about">
+      <h3 class="title">Quem Somos</h3>
+      <p>
+        A ThunderHawk nasceu em 2016, durante o período pré-olímpico, como uma
+        empresa do ramo de infraestrutura e segurança de TI. Diante de toda
+        experiência adquirida em virtude dos Jogos Olímpicos e Paraolímpicos de
+        2016 a ThunderHawk se consolidou como empresa de Cybersegurança. Tendo
+        como norte os princípios de qualidade, transparência e responsabilidade,
+        nós nos comprometemos em prestar nossos serviços tendo sempre como base
+        essas diretivas, o que dá a tranquilidade necessária aos clientes de que
+        seu negócio está nas mãos certas. Como diferencial, nossos profissionais
+        têm ampla experiência em múltiplos domínios, além de terem também mais
+        de 10 anos de experiência, cada um. Outro diferencial importante
+        adquirido por nossos profissionais refere-se ao treinamento militar
+        voltado às áreas de TI e Cybersegurança, o que os prepara para realizar
+        tarefas em meio às adversidades. Essas características acrescentam ainda
+        mais credibilidade e confiança ao que fazemos, pois, nosso senso de
+        responsabilidade e qualidade estão constantemente presentes por todo o
+        processo no trato com os nossos clientes, desde o planejamento até a
+        entrega.
+      </p>
+      <!-- <hr> -->
 
-
-	<section class="hero" id="home">
-		<div class="background-image" id="particles-js" ></div>
-		<!-- <h1>ThunderHawk</h1> -->
-		<h3>A segurança do seu negócio é nossa missão</h3>
-		<a href="#contact" class="btn">Orçamento</a>
-	</section>
-
-
-	<section class="our-work" id="about">
-		<h3 class="title">Quem Somos</h3>
-		<p>
-			A ThunderHawk nasceu em 2016, durante o período pré-olímpico, como uma empresa do ramo de infraestrutura e segurança de TI. Diante de toda experiência adquirida em virtude dos Jogos Olímpicos e Paraolímpicos de 2016 a ThunderHawk se consolidou como empresa de Cybersegurança. Tendo como norte os princípios de qualidade, transparência e responsabilidade, nós nos comprometemos em prestar nossos serviços tendo sempre como base essas diretivas, o que dá a tranquilidade necessária aos clientes de que seu negócio está nas mãos certas.
-			Como diferencial, nossos profissionais têm ampla experiência em múltiplos domínios, além de terem também mais de 10 anos de experiência, cada um. Outro diferencial importante adquirido por nossos profissionais refere-se ao treinamento militar voltado às áreas de TI e Cybersegurança, o que os prepara para realizar tarefas em meio às adversidades. Essas características acrescentam ainda mais credibilidade e confiança ao que fazemos, pois, nosso senso de responsabilidade e qualidade estão constantemente presentes por todo o processo no trato com os nossos clientes, desde o planejamento até a entrega.
-		</p>
-		<!-- <hr> -->
-
-		<!-- <ul class="grid">
+      <!-- <ul class="grid">
 			<li class="small" style="background-image: url(assets/img/coast.jpg);"></li>
 			<li class="large" style="background-image: url(assets/img/island.jpg);"></li>
 			<li class="large" style="background-image: url(assets/img/balloon.jpg);"></li>
 			<li class="small" style="background-image: url(assets/img/mountain.jpg);"></li>
 		</div> -->
-	</section>
-	
+    </section>
 
-	<section class="features" id="mission">
-		<h3 class="title">Missão e Valores</h3>
-		<p>
-			Oferecer serviços de qualidade que corroborem com a redução do índice de risco e com a neutralização de ataques e exploração cibernética contra os dispositivos computacionais e as redes de computadores de seus clientes. (cf. MD31-M-07/2014)
-			Nossos valores estão intimamente ligados aos pilares que norteiam nosso trabalho: Qualidade, Transparência e Responsabilidade.
-		</p>
-		<hr>
-		<h3 class="title" id="services">Serviços</h3>
-		<div class="owl-carousel">
-			<div class="item-carousel"> 
-				<i class="fa fa-camera-retro"></i>
-				<h4>Análise de Risco Cibernético</h4>
-				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam id felis et ipsum bibendum ultrices vitae pulvinar velit.</p>	 
-			</div>
-			<div class="item-carousel"> 
-				<i class="fa fa-cubes"></i>
-				<h4>Teste de Segurança</h4>
-				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam id felis et ipsum bibendum ultrices vitae pulvinar velit.</p> 
-			</div>
-			<div class="item-carousel">
-				<i class="fa fa-newspaper-o"></i>
-				<h4>Blindagem de Sistemas</h4>
-				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam id felis et ipsum bibendum ultrices vitae pulvinar velit.</p>
-			</div>
-			<div class="item-carousel">
-					<i class="fa fa-newspaper-o"></i>
-					<h4>Conciêntização de Usuários</h4>
-					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam id felis et ipsum bibendum ultrices vitae pulvinar velit.</p>
-			</div>
-		</div>
-		
-	</section>
+    <section class="features" id="mission">
+      <h3 class="title">Missão e Valores</h3>
+      <p>
+        Oferecer serviços de qualidade que corroborem com a redução do índice de
+        risco e com a neutralização de ataques e exploração cibernética contra
+        os dispositivos computacionais e as redes de computadores de seus
+        clientes. (cf. MD31-M-07/2014) Nossos valores estão intimamente ligados
+        aos pilares que norteiam nosso trabalho: Qualidade, Transparência e
+        Responsabilidade.
+      </p>
+      <hr />
+      <h3 class="title" id="services">Serviços</h3>
+      <div class="owl-carousel">
+        <div class="item-carousel">
+          <i class="fa fa-camera-retro"></i>
+          <h4>Análise de Risco Cibernético</h4>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam id
+            felis et ipsum bibendum ultrices vitae pulvinar velit.
+          </p>
+        </div>
+        <div class="item-carousel">
+          <i class="fa fa-cubes"></i>
+          <h4>Teste de Segurança</h4>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam id
+            felis et ipsum bibendum ultrices vitae pulvinar velit.
+          </p>
+        </div>
+        <div class="item-carousel">
+          <i class="fa fa-newspaper-o"></i>
+          <h4>Blindagem de Sistemas</h4>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam id
+            felis et ipsum bibendum ultrices vitae pulvinar velit.
+          </p>
+        </div>
+        <div class="item-carousel">
+          <i class="fa fa-newspaper-o"></i>
+          <h4>Conciêntização de Usuários</h4>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam id
+            felis et ipsum bibendum ultrices vitae pulvinar velit.
+          </p>
+        </div>
+      </div>
+    </section>
 
+    <section class="reviews" id="contact">
+      <h3 class="title">Entre em Contato</h3>
 
-	<section class="reviews"  id="contact">
-		<h3 class="title">Entre em Contato</h3>
+      <form action="#" class="contact-form">
+        <label for="nome">Nome</label>
+        <input type="text" name="nome" />
+        <label for="email">E-mail</label>
+        <input type="email" name="email" />
+        <label for="mensagem">Mensagem</label>
+        <textarea name="mensagem" id="" cols="30" rows="10"></textarea>
+        <button type="submit">Enviar</button>
+      </form>
+    </section>
 
-	<form action="#" class="contact-form">
-		<label for="nome">Nome</label>
-		<input type="text" name="nome">
-		<label for="email">E-mail</label>
-		<input type="email" name="email">
-		<label for="mensagem">Mensagem</label>
-		<textarea name="mensagem" id="" cols="30" rows="10"></textarea>
-		<button  type="submit">Enviar</button>
-	</form>
+    <section class="contact">
+      <h3 class="title">Assine nossa Newsletter</h3>
+      <p>
+        Receba notícias, proximos eventos, dicas de segurança e muito conteúdo
+        bacana sobre o mundo da informática.
+      </p>
+      <hr />
 
-		
-	</section>
+      <form>
+        <input type="email" placeholder="Email" />
+        <a href="#" class="btn">Inscreva-se</a>
+      </form>
+    </section>
 
-
-	<section class="contact">
-		<h3 class="title">Assine nossa Newsletter</h3>	
-		<p>Receba notícias, proximos eventos, dicas de segurança e muito conteúdo bacana sobre o mundo da informática.</p>
-		<hr>
-
-		<form>
-			<input type="email" placeholder="Email">
-			<a href="#" class="btn">Inscreva-se</a>
-		</form>
-	</section>
-
-	<footer>
-		<ul>
-			<li><a href="#"><i class="fa fa-twitter-square"></i></a></li>
-			<li><a href="#"><i class="fa fa-facebook-square"></i></a></li>
-		</ul>
-		<p>2019 © ThunderHawk. Cybersecurity Services. Todos os direitos reservados.</p>
-	</footer>
-	<script
-  src="https://code.jquery.com/jquery-3.4.1.min.js"
-  integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
-	crossorigin="anonymous"></script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.15.0/lodash.min.js"></script>
-	<script src="assets/js/plugins.js"></script>
-	<script src="assets/js/owl.carousel.min.js"></script>
-	<script src="assets/js/main.js"></script>
-</body>
-
+    <footer>
+      <ul>
+        <li>
+          <a href="#"><i class="fa fa-twitter-square"></i></a>
+        </li>
+        <li>
+          <a href="#"><i class="fa fa-facebook-square"></i></a>
+        </li>
+      </ul>
+      <p>
+        2019 © ThunderHawk. Cybersecurity Services. Todos os direitos
+        reservados.
+      </p>
+    </footer>
+    <script
+      src="https://code.jquery.com/jquery-3.4.1.min.js"
+      integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.15.0/lodash.min.js"></script>
+    <script src="assets/js/plugins.js"></script>
+    <script src="assets/js/owl.carousel.min.js"></script>
+    <script src="assets/js/main.js"></script>
+  </body>
 </html>
