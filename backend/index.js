@@ -64,6 +64,6 @@ app.post("/sendmail", (req, res) => {
   });
 });
 
-app.listen(3000, () => {
+app.listen(process.env.PORT || 3000, () => {
   console.log("node run listen port 3000");
 });
