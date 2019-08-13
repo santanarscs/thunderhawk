@@ -119,7 +119,7 @@ header {
 	transition: 0.3s;
 }
 header img {
-	height: 100px;
+	height: 140px;
 }
 
 header h2 {
@@ -149,7 +149,7 @@ header.small {
 }
 
 header.small img {
-	height: 60px;
+	height: 70px;
 }
 
 @media (max-width: 1200px) {
@@ -157,7 +157,7 @@ header.small img {
 		font-size: 14px;
 	}
 	header img {
-		height: 60px;
+		height: 90px;
 	}
 }
 
