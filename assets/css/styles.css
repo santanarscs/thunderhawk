@@ -382,7 +382,6 @@ header.small img {
 --------------------*/
 
 .acting .item-acting {
-	height: 100%;
 	border-radius: 4px;
 	display: flex;
 	flex-direction: column;
@@ -533,11 +532,11 @@ header.small img {
 .contact-form input,
 textarea {
 	padding: 15px;
-	flex: 1;
 	font-size: 18px;
 	color: #555;
 	margin-bottom: 15px;
 }
+
 .contact-form button {
 	padding: 18px 42px;
 	border-radius: 4px;
