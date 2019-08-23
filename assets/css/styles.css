@@ -550,8 +550,15 @@ textarea {
   opacity: 0.9;
   cursor: pointer;
 }
+.disabled {
+  cursor: not-allowed !important;
+  opacity: 0.5 !important;
+}
 .contact-form button:hover {
   opacity: 1;
+}
+.g-recaptcha {
+  margin-bottom: 10px;
 }
 #loading {
   display: none;

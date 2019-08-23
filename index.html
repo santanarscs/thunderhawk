@@ -18,6 +18,7 @@
       integrity="sha384-g5uSoOSBd7KkhAMlnQILrecXvzst9TdC09/VM+pjDTCM+1il8RHz5fKANTFFb+gQ"
       crossorigin="anonymous"
     ></script>
+    <script src="https://www.google.com/recaptcha/api.js?hl=pt-BR"></script>
     <link rel="stylesheet" href="assets/css/owl.carousel.min.css" />
     <link rel="stylesheet" href="assets/css/owl.theme.default.min.css" />
     <link rel="stylesheet" href="assets/css/styles.css" />
@@ -183,7 +184,14 @@
         <input type="email" name="mail" />
         <label for="mensagem">Mensagem</label>
         <textarea name="message" id="" cols="40" rows="5"></textarea>
-        <button type="submit">Enviar</button>
+        <div
+          class="g-recaptcha"
+          data-sitekey="6LdTjrQUAAAAAFnBm0dUJmRD7DFNRjwWfGE3T0LE"
+          data-callback="enableSubmit"
+        ></div>
+        <button type="submit" id="btn-contact-submit" class="disabled">
+          Enviar
+        </button>
       </form>
     </section>
 

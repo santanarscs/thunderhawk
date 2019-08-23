@@ -164,6 +164,7 @@ $(function() {
       }
     }
   });
+  $("#btn-contact-submit").attr("disabled", true);
 });
 /**
  * animação do menu mobile
@@ -172,6 +173,11 @@ $(".mobile-btn").click(function() {
   $(this).toggleClass("active");
   $(".mobile-menu").toggleClass("active");
 });
+
+function enableSubmit() {
+  $("#btn-contact-submit").attr("disabled", false);
+  $("#btn-contact-submit").removeClass("disabled");
+}
 
 $("#contact-form").submit(e => {
   e.preventDefault();
