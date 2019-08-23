@@ -186,7 +186,7 @@ $('#contact-form').submit((e) => {
 		// context: {name, mail, message}
 		contentType: 'application/json',
 		type: 'POST',
-		url: 'http://localhost:3000/sendmail',
+		url: 'http://testethunderwak-tk.umbler.net/sendmail',
 		data: JSON.stringify({ name, mail, message }),
 		success: (msg) => {
 			$('#loading').remove();
