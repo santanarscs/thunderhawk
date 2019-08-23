@@ -186,7 +186,7 @@ $('#contact-form').submit((e) => {
 		// context: {name, mail, message}
 		contentType: 'application/json',
 		type: 'POST',
-		url: 'http://testethunderwak-tk.umbler.net/sendmail',
+		url: 'https://node-sendmail.herokuapp.com/sendmail',
 		data: JSON.stringify({ name, mail, message }),
 		success: (msg) => {
 			$('#loading').remove();
