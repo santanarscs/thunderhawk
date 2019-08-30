@@ -366,7 +366,6 @@ header.small img {
 .features {
   color: #fff;
   background-image: url("../img/bg-particles.png");
-  height: 500px;
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
